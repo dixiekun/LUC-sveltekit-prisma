@@ -1,0 +1,31 @@
+@use 'grid';
+@use 'reset';
+@use 'spacing';
+@use 'colors';
+@use 'fonts';
+@use 'buttons';
+
+body {
+    font-family: var(--system-ui);
+    font-size: var(--text-base);
+    line-height: 1.5em;
+    color: var(--color-base);
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.25em;
+}
+
+a {
+    color: var(--color-accent);
+
+    &:hover {
+        color: var(--color-primary-light-400);
+    }
+
+    &:focus {
+        outline: 5px auto var(--color-system-blue);
+        outline-offset: 0.4rem;
+
+    }
+}
