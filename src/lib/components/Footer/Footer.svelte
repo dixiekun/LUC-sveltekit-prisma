@@ -39,16 +39,16 @@ import Logo from "$components/logo.svelte";
             <h2>Get connected</h2>
             <ul class="socials">
                 <li class="icon-holder">
-                    <a href="/">
+                    <a aria-label="Follow our facebook page" href="/">
                         <Facebook/>
                     </a>
                 </li>
-                <li class="icon-holder">
+                <li aria-label="Follow our instagram page" class="icon-holder">
                     <a href="/">
                         <Instagram/>
                     </a>
                 </li>
-                <li class="icon-holder">
+                <li aria-label="Follow our twitter page" class="icon-holder">
                     <a href="/">
                         <Twitter/>
                     </a>

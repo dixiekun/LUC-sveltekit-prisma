@@ -30,7 +30,7 @@
     <a aria-label="Go to {heading} page" href="{serviceUrl}"><h3>{heading}</h3></a>
     <p class="desc">{desc}</p>
     <img src="{serviceImage}" alt="{heading}">
-    <button tabindex="-1">
+    <button aria-label="Learn more about {heading}" tabindex="-1">
         <UpArrowDiagonal/>
     </button>
 </div>
@@ -92,7 +92,7 @@
             height: 100%;
             inset: 0;
             z-index: 2;
-            transition: all 0.3s ease;
+            transition: background 0.3s ease;
         }
 
         button {
@@ -105,6 +105,7 @@
             padding: var(--space-base);
             border: unset;
             background-color: white;
+            cursor: pointer;
         }
 
         &:hover {
@@ -126,7 +127,6 @@
             }
 
             &::before {
-                content: '';
                 background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.00) 100%);
             }
         }
