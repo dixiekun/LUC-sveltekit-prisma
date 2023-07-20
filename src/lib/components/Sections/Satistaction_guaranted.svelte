@@ -57,5 +57,10 @@
         p {
             font-size: var(--text-xs);
         }
+
+        .head-dm {
+            flex-direction: column;
+            align-items: start;
+        }
     }
 </style>
