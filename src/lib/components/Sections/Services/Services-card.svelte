@@ -66,7 +66,7 @@
         p.desc {
             position: absolute;
             z-index: 2;
-            font-size: var(--text-xs);
+            font-size: var(--text-xxs);
             color: var(--color-primary-light-100);
             padding: var(--space-m);
             translate: 0 20rem;
@@ -119,11 +119,11 @@
             }
 
             h3 {
-                translate: 0 -6.2rem;
+                translate: 0 -5.2rem;
             }
 
             p {
-                translate: 0 8rem;
+                translate: 0 9rem;
             }
 
             &::before {

@@ -11,6 +11,10 @@ body {
     font-size: var(--text-base);
     line-height: 1.5;
     color: var(--color-base);
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 
@@ -53,3 +57,4 @@ a {
 section, footer {
     padding: var(--space-xxxl) var(--space-l);
 }
+
