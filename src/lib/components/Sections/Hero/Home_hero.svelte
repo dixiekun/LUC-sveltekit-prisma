@@ -15,7 +15,7 @@
 
 <section>
     <div class="grid">
-        <div class="col-5 left">
+        <div class="col-5 col-6-m col-3-s left">
             <div class="head">
                 <span class="heading-accent">{headingAccent}</span>
                 <h1>{heading}</h1>
@@ -27,9 +27,9 @@
             </ul>
             <Button/>
         </div>
-        <div class="col-1 col-spacer hide-s">
+        <div class="col-1 col-spacer hide-m">
         </div>
-        <div class="col-6 right">
+        <div class="col-6 col-3-s right">
             <SatistactionGuaranted message="We believe in delivering the highest level of service. Experience the joy of a meticulously clean home."/>
             <div class="media">
                 <Video {videoSrc} thumbnail={introVideoThumbnail}/>

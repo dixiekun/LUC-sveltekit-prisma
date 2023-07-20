@@ -35,7 +35,7 @@ let features = [
 </script>
 <section>
     <div class="grid">
-        <div class="col-5 left">
+        <div class="col-5 col-5-m col-3-s left">
             <SectionHead headingAccent="Satisfaction Guaranteed" heading="Why Choose Us?" alignment="left"/>
             <div class="body">            
                 <img src="{sectionImage}" alt="Lucid cleaning"/>
@@ -44,7 +44,7 @@ let features = [
             </div>
         </div>
         <div class="col-1 spacer hide-s"></div>
-        <div class="col-6 right">
+        <div class="col-6 col-6-m col-3-s right">
             <ul class="features">
                 {#each features as feature}
                     <li><FeatureCard {...feature} /></li>

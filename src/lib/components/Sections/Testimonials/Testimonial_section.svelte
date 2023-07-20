@@ -43,7 +43,7 @@
     </div>
     <ul class="grid">
         {#each testimonials as testimonial}
-            <li class="col-6"><TestimonialCard
+            <li class="col-6 col-3-s"><TestimonialCard
                 message={testimonial.message}
                 customerName={testimonial.customerName}
                 customerAvatar={testimonial.customerAvatar}
