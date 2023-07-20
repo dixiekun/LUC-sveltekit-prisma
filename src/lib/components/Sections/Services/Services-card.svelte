@@ -65,7 +65,7 @@
 
         p.desc {
             position: absolute;
-            z-index: 3;
+            z-index: 2;
             font-size: var(--text-xs);
             color: var(--color-primary-light-100);
             padding: var(--space-m);
