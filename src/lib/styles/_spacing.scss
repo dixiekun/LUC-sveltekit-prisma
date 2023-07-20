@@ -1,11 +1,11 @@
 :root {
-    --space-xxs: clamp(0.25rem, calc(0.25rem + 0.00vw), 0.25rem);
-    --space-xs: clamp(0.44rem, calc(0.42rem + 0.10vw), 0.50rem);
-    --space-s: clamp(0.69rem, calc(0.67rem + 0.10vw), 0.75rem);
-    --space-base: clamp(0.88rem, calc(0.83rem + 0.21vw), 1.00rem);
-    --space-m: clamp(1.31rem, calc(1.25rem + 0.31vw), 1.50rem);
-    --space-l: clamp(1.75rem, calc(1.67rem + 0.42vw), 2.00rem);
-    --space-xl: clamp(2.63rem, calc(2.50rem + 0.63vw), 3.00rem);
-    --space-xxl: clamp(3.50rem, calc(3.33rem + 0.83vw), 4.00rem);
-    --space-xxxl: clamp(5.25rem, calc(5.00rem + 1.25vw), 6.00rem);
+    --space-xxs: clamp(0.25rem, calc(0.25rem + 0.00vw), 0.25rem); //4px
+    --space-xs: clamp(0.44rem, calc(0.42rem + 0.10vw), 0.50rem); //8px
+    --space-s: clamp(0.69rem, calc(0.67rem + 0.10vw), 0.75rem); //12px
+    --space-base: clamp(0.88rem, calc(0.83rem + 0.21vw), 1.00rem); //16px
+    --space-m: clamp(1.31rem, calc(1.25rem + 0.31vw), 1.50rem); //24px
+    --space-l: clamp(1.75rem, calc(1.67rem + 0.42vw), 2.00rem); //32px
+    --space-xl: clamp(2.63rem, calc(2.50rem + 0.63vw), 3.00rem);  //48px
+    --space-xxl: clamp(3.50rem, calc(3.33rem + 0.83vw), 4.00rem); //64px
+    --space-xxxl: clamp(5.25rem, calc(5.00rem + 1.25vw), 6.00rem); //96px
 }

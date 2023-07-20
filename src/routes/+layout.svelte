@@ -1,9 +1,10 @@
 <script lang="ts">
     import '$lib/styles/global.scss';
+    import Header from '$components/Header/Header.svelte';
 </script>
 
 <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-
+<Header/>
 <slot/>
 
 <style>

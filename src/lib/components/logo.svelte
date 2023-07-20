@@ -1,0 +1,1 @@
+<a href="/"><img src="/LUC-logo.svg" alt="Lucid clean logo"></a>

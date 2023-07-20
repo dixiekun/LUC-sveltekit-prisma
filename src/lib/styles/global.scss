@@ -4,20 +4,40 @@
 @use 'colors';
 @use 'fonts';
 @use 'buttons';
+@use 'misc';
 
 body {
     font-family: var(--system-ui);
     font-size: var(--text-base);
-    line-height: 1.5em;
+    line-height: 1.5;
     color: var(--color-base);
 }
 
+
 h1, h2, h3, h4 {
-    line-height: 1.25em;
+    line-height: 1.25;
+    font-family: var(--serif);
+}
+
+h1 {
+    font-size: var(--text-xxl);
+}
+
+h2 {
+    font-size: var(--text-xl);
+}
+
+h3 {
+    font-size: var(--text-m);
+}
+
+h4 {
+    font-size: var(--text-base);
 }
 
 a {
     color: var(--color-accent);
+    text-decoration: none;
 
     &:hover {
         color: var(--color-primary-light-400);
@@ -28,4 +48,8 @@ a {
         outline-offset: 0.4rem;
 
     }
+}
+
+section, footer {
+    padding: var(--space-xxxl) var(--space-l);
 }

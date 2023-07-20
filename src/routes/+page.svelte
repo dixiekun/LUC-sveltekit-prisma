@@ -1,32 +1,28 @@
 <script lang="ts">
-  import type { PageServerData } from "./$types";
+  import Footer from "$components/Footer/Footer.svelte";
+  import HomeHero from "$components/Sections/Hero/Home_hero.svelte";
+  import Services from "$components/Sections/Services/Services.svelte";
+  import TestimonialSection from "$components/Sections/Testimonials/Testimonial_section.svelte";
+  import WhyChooseUs from "$components/Sections/Why_choose_us/Why_choose_us.svelte";
 
-    export let data: PageServerData
-   const { posts } = data
+  const heroChecklist = [
+    "<strong>Excellent Service:</strong> Detail-oriented, consistent cleaning services, every single time.",
+    "<strong>Safe & Fully Insured:</strong> Your family's health and well-being are important to us.",
+    "<strong>Local Owned & Operated Family Business:</strong> We are a family business deeply rooted in the Greater Grand Rapids community."
+  ]
+
     
 </script>
 <main id="main">
-  <div class="grid">
-    <div class="col-2 hide-m"></div>
-    {#each posts as post}
-      <article class="col-4">
-          <h2>{post.title}</h2>
-          <p class="content">
-              {post.content}
-          </p>
-      </article>
-    {/each}
-  </div>
-
+  <HomeHero headingAccent="Welcome to the world of Lucid Cleaning" heading="Experience the Dream Clean Service" checklist={heroChecklist}/>
+  <TestimonialSection/>
+  <WhyChooseUs/>
+  <Services/>
 </main>
+<Footer/>
 
 <style lang="scss">
-  article {
-    background-color: var(--base-100);
-    padding: 2rem;
-    border-radius: 1.2rem;
-    box-shadow: 0 1px 4rem rgba(0, 0, 0, 0.1);
-  }
+
 
 </style>
 

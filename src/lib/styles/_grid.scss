@@ -2,9 +2,14 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(12,1fr);
-    max-width: 80rem;
+    max-width: 98rem;
     min-height: 40vh;
     margin: auto
+}
+
+.container {
+    max-width: 98rem;
+    margin-inline: auto;
 }
 
 @media(min-width: 70rem) {
@@ -134,4 +139,8 @@
 .center {
     align-self: center;
     align-content: center
+}
+
+.hide {
+    display: none;
 }

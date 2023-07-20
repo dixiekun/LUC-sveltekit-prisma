@@ -1,8 +1,3 @@
-## This is a starter build for sveltekit and planetscale
+## Lucid cleaning website
 
-Sass ready, Style tokens ready
-
-add env variable
-```
-DATABASE_URL='mysql://<username>:<password>@aws.connect.psdb.cloud/***?sslaccept=strict'
-```
+Full-stack website built with sveltekit and prisma orm
