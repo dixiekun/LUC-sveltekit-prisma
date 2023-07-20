@@ -1,7 +1,7 @@
 <script lang="ts">
 import Button from "$components/Button.svelte";
 import SectionHead from "$components/Sections/Section_head.svelte";
-import sectionImage from "$lib/images/why-choose-us.jpg"
+import sectionImage from "$lib/images/why-choose-us.webp"
 import FeatureCard from "../Feature_card.svelte";
 import iconStaff from "$lib/icons/icon_staff.svg"
 import iconSafe from "$lib/icons/icon_safe-products.svg"

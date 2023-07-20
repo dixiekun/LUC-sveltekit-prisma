@@ -2,7 +2,7 @@
   import Button from "$components/Button.svelte";
   import Video from "$components/Video.svelte";
   import checkIcon from "$lib/icons/icon_checkmark.svg";
-  import introVideoThumbnail from "$lib/images/intro-video-thumbnail.png";
+  import introVideoThumbnail from "$lib/images/intro-video-thumbnail.webp";
   import videoSrc from "$lib/videos/intro-video.mp4"
   import SatistactionGuaranted from "../Satistaction_guaranted.svelte";
 
