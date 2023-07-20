@@ -43,13 +43,13 @@ import Logo from "$components/logo.svelte";
                         <Facebook/>
                     </a>
                 </li>
-                <li aria-label="Follow our instagram page" class="icon-holder">
-                    <a href="/">
+                <li class="icon-holder">
+                    <a aria-label="Follow our instagram page" href="/">
                         <Instagram/>
                     </a>
                 </li>
-                <li aria-label="Follow our twitter page" class="icon-holder">
-                    <a href="/">
+                <li class="icon-holder">
+                    <a aria-label="Follow our twitter page" href="/">
                         <Twitter/>
                     </a>
                 </li>
