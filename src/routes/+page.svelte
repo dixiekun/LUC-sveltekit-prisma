@@ -2,6 +2,7 @@
   import Footer from "$components/Footer/Footer.svelte";
   import Seo from "$components/SEO.svelte";
   import HomeHero from "$components/Sections/Hero/Home_hero.svelte";
+  import ServiceArea from "$components/Sections/Location/Service-area.svelte";
   import Services from "$components/Sections/Services/Services.svelte";
   import TestimonialSection from "$components/Sections/Testimonials/Testimonial_section.svelte";
   import WhyChooseUs from "$components/Sections/Why_choose_us/Why_choose_us.svelte";
@@ -29,6 +30,7 @@
   <TestimonialSection/>
   <WhyChooseUs/>
   <Services/>
+  <ServiceArea/>
 </main>
 <Footer/>
 

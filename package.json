@@ -27,6 +27,8 @@
 		"@prisma/client": "^4.16.2",
 		"@tiptap/core": "^2.0.3",
 		"@tiptap/pm": "^2.0.3",
-		"@tiptap/starter-kit": "^2.0.3"
+		"@tiptap/starter-kit": "^2.0.3",
+		"@types/mapbox-gl": "^2.7.12",
+		"mapbox-gl": "^2.15.0"
 	}
 }
