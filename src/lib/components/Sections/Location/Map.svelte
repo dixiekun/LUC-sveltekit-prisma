@@ -1,23 +1,26 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import markerSVG from "$lib/icons/icon_marker.svg";
+    import { PUBLIC_MAPBOX_ACCESS_TOKEN } from '$env/static/public';
     import mapboxgl from 'mapbox-gl';
-    import markerSVG from "$lib/icons/icon_marker.svg"
 
-  
+    
     export let longitude: number = -85.62;
     export let latitude: number = 42.87;
 
-
+    mapboxgl.accessToken = PUBLIC_MAPBOX_ACCESS_TOKEN;
+    
+  
 
     onMount(() => {
-      mapboxgl.accessToken = 'pk.eyJ1Ijoicnl1dXV6YWtpIiwiYSI6ImNsa2MwYjAwMDBkc3QzZXBmMmZ2N3VrYXQifQ.V31myvib95sfNZ6OsGZhRA';
-      
-      const map = new mapboxgl.Map({
+    
+        const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
         center: [longitude, latitude], // starting position [lng, lat]
         zoom: 10, // starting zoom
-      });
+        });
+
 
       const popup = new mapboxgl.Popup({offset: 40})
         .setHTML("<h4 style='padding:var(--space-m); font-size:var(--text-s);';>Lucid Clean</h4>")
