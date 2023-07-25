@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { preloadData } from "$app/navigation";
   import UpArrowDiagonal from "$components/Icons/Up-arrow-diagonal.svelte";
 
     
@@ -18,16 +19,21 @@
         }
     }
 
+    // function handleHover() {
+    //     preloadData(`/services${serviceUrl}`)
+    // }
+
 </script>
 
 
 <div class="service-card" 
     role="button"
     tabindex="-1"
-    on:click={() => navigateToService(serviceUrl)} 
-    on:keydown={handleKeyDown}>
+    on:click={() => navigateToService(`/services${serviceUrl}`)} 
+    on:keydown={handleKeyDown}
+   >
 
-    <a aria-label="Go to {heading} page" href="{serviceUrl}"><h3>{heading}</h3></a>
+    <a data-sveltekit-preload-data="hover" aria-label="Go to {heading} page" href="/services{serviceUrl}"><h3>{heading}</h3></a>
     <p class="desc">{desc}</p>
     <img src="{serviceImage}" alt="{heading}">
     <button aria-label="Learn more about {heading}" tabindex="-1">

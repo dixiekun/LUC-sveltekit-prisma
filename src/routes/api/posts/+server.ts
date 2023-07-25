@@ -7,7 +7,7 @@ export const GET = (async () => {
     const posts = await prisma.post.findMany({})
 
     return new Response(
-        JSON.stringify({ data: posts }), 
+        JSON.stringify(posts), 
         {status: 200}
     )
 })

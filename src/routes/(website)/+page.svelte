@@ -1,7 +1,8 @@
 <script lang="ts">
-  import Footer from "$components/Footer/Footer.svelte";
   import Seo from "$components/SEO.svelte";
+  import Cta from "$components/Sections/CTA/CTA.svelte";
   import HomeHero from "$components/Sections/Hero/Home_hero.svelte";
+  import LatestPosts from "$components/Sections/Latest_posts/Latest_posts.svelte";
   import ServiceArea from "$components/Sections/Location/Service-area.svelte";
   import Services from "$components/Sections/Services/Services.svelte";
   import TestimonialSection from "$components/Sections/Testimonials/Testimonial_section.svelte";
@@ -25,18 +26,15 @@
 
 <Seo {...seoMeta}/>
 
-<main id="main">
+
   <HomeHero headingAccent="Welcome to the world of Lucid Cleaning" heading="Experience the Dream Clean Service" checklist={heroChecklist}/>
   <TestimonialSection/>
   <WhyChooseUs/>
   <Services/>
   <ServiceArea/>
-</main>
-<Footer/>
-
-<style lang="scss">
+  <LatestPosts/>
+  <Cta/>
 
 
-</style>
 
 

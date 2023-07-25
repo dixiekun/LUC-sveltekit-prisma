@@ -6,7 +6,7 @@ import SectionHead from "../Section_head.svelte";
 </script>
 <section>
     <div class="grid">
-        <div class="col-4 left">
+        <div class="col-4 col-3-m col-3-s left">
             <SectionHead heading="Our Service Area" headingAccent="Location" alignment="left" />
             <div class="content">
                 <h3>Have a Question?<br> Call us 1-616-951-1315</h3>
@@ -43,8 +43,8 @@ import SectionHead from "../Section_head.svelte";
                 <Button/>
             </div>
         </div>
-        <div class="col-1 col-spacer hide-s"></div>
-        <div class="col-7 col-6-m col-3-s">
+        <div class="col-1 col-spacer hide-m"></div>
+        <div class="col-7 col-3-m col-3-s">
            <Map longitude={-85.62} latitude={42.87}/>
         </div>
     </div>
@@ -73,6 +73,13 @@ import SectionHead from "../Section_head.svelte";
                 font-size: var(--text-xs);
             }
         }
+    }
+
+    @media (width < 54rem) {
+        .grid {
+          grid-template-columns:repeat(3,1fr);
+          min-height: 30vh
+      }
     }
 
 </style>

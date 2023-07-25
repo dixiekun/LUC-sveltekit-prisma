@@ -8,19 +8,3 @@
     {buttonText}
 </button>
 
-
-<style lang="scss">
-
-    .btn-primary {
-            font-size: var(--text-s);
-    }
-
-
-
-    @media (width > 1299px) {
-        .btn-primary {
-            font-size: var(--text-base);
-        }
-    }
-    
-</style>

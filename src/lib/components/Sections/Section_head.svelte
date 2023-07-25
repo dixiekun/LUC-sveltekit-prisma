@@ -1,6 +1,8 @@
 <script lang="ts">
+
     export let heading: string;
     export let headingAccent: string;
+
 
     type Alignment = 
         | 'left'
@@ -12,10 +14,19 @@
 </script>
 
 
-<div class="{`head ${alignment}`}">
-    <div class="heading-accent">{headingAccent}</div>
-    <h2>{heading}</h2>
-</div>
+
+{#if alignment === 'center'}
+    <div class="head center">
+        <div class="heading-accent">{headingAccent}</div>
+        <h2>{heading}</h2>
+    </div>
+{:else}
+    <div class="head left">
+        <div class="heading-accent">{headingAccent}</div>
+        <h2>{heading}</h2>
+    </div>
+{/if}
+
 
 
 <style lang="scss">
@@ -53,6 +64,7 @@
 
         h2 {
             position: relative;
+
 
             &::before {
                 content: '';
@@ -92,12 +104,13 @@
 
                 &::after {
                     content: '';
+                    display: inline-block;
                     height: 3.029rem;
                     width: 2.313rem;
                     background: url('$lib/icons/icon_title_glitter.svg') no-repeat;
-                    position: absolute;
-                    top: -0.8rem;
-                    right: -2.5rem;
+                    position: relative;
+                    top: 0;
+                    right: -0.5rem;
                     transform: scaleX(-1);
             }
         }
