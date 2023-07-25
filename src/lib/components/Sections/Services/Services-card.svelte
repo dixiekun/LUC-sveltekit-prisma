@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { preloadData } from "$app/navigation";
   import UpArrowDiagonal from "$components/Icons/Up-arrow-diagonal.svelte";
 
     
@@ -8,39 +7,20 @@
     export let serviceImage: string;
     export let serviceUrl: string;
 
-    function navigateToService(url:string) {
-            window.location.href = url;
-    }
 
-    function handleKeyDown(event:KeyboardEvent) {
-        if (event.key === 'Enter' || event.key === ' ') {
-        // Handle 'Enter' key or 'Space' key press to trigger the same action as click
-        navigateToService(serviceUrl);
-        }
-    }
-
-    // function handleHover() {
-    //     preloadData(`/services${serviceUrl}`)
-    // }
 
 </script>
 
-
-<div class="service-card" 
-    role="button"
-    tabindex="-1"
-    on:click={() => navigateToService(`/services${serviceUrl}`)} 
-    on:keydown={handleKeyDown}
-   >
-
-    <a data-sveltekit-preload-data="hover" aria-label="Go to {heading} page" href="/services{serviceUrl}"><h3>{heading}</h3></a>
-    <p class="desc">{desc}</p>
-    <img src="{serviceImage}" alt="{heading}">
-    <button aria-label="Learn more about {heading}" tabindex="-1">
-        <UpArrowDiagonal/>
-    </button>
-</div>
-
+<a aria-label="Go to {heading} page" role="button" href="/services{serviceUrl}">
+    <div class="service-card" >
+        <h3>{heading}</h3>
+        <p class="desc">{desc}</p>
+        <img src="{serviceImage}" alt="{heading}">
+        <button aria-label="Learn more about {heading}" tabindex="-1">
+            <UpArrowDiagonal/>
+        </button>
+    </div>
+</a>
 
 
 <style lang="scss">
@@ -54,10 +34,6 @@
         padding: var(--space-m);
         cursor: pointer;
 
-        &:has(a:focus) {
-            outline: 5px auto var(--color-system-blue);
-            outline-offset: 0.4rem;
-        }
 
         h3 {
             font-family: var(--system-ui);
