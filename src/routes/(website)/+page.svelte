@@ -27,13 +27,13 @@
 <Seo {...seoMeta}/>
 
 
-  <HomeHero headingAccent="Welcome to the world of Lucid Cleaning" heading="Experience the Dream Clean Service" checklist={heroChecklist}/>
-  <TestimonialSection/>
-  <WhyChooseUs/>
-  <Services/>
-  <ServiceArea/>
-  <LatestPosts/>
-  <Cta/>
+<HomeHero headingAccent="Welcome to the world of Lucid Cleaning" heading="Experience the Dream Clean Service" checklist={heroChecklist}/>
+<TestimonialSection/>
+<WhyChooseUs/>
+<Services/>
+<ServiceArea/>
+<LatestPosts/>
+<Cta/>
 
 
 

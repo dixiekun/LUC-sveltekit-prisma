@@ -52,12 +52,12 @@ import {page} from "$app/stores"
             <div class="col-3">
                 <h2>Services</h2>
                 <ul class="service-menu">
-                    <li><a href="/residential-cleaning" aria-label="Residential Cleaning">Residential Cleaning</a></li>
-                    <li><a href="/deep-cleaning" aria-label="Deep Cleaning">Deep Cleaning</a></li>
-                    <li><a href="/office-cleaning" aria-label="Office Cleaning">Office Cleaning</a></li>
-                    <li><a href="/move-in-out-cleaning" aria-label="Move In / Out Cleaning">Move In / Out Cleaning</a></li>
-                    <li><a href="/organization" aria-label="Organization">Organization</a></li>
-                    <li><a href="/laundry-service" aria-label="Laundry Service">Laundry Service</a></li>
+                    <li><a href="/services/residential-cleaning" aria-label="Residential Cleaning">Residential Cleaning</a></li>
+                    <li><a href="/services/deep-cleaning" aria-label="Deep Cleaning">Deep Cleaning</a></li>
+                    <li><a href="/services/office-cleaning" aria-label="Office Cleaning">Office Cleaning</a></li>
+                    <li><a href="/services/move-in-out-cleaning" aria-label="Move In / Out Cleaning">Move In / Out Cleaning</a></li>
+                    <li><a href="/services/organization-cleaning" aria-label="Organization">Organization</a></li>
+                    <li><a href="/services/laundry-service" aria-label="Laundry Service">Laundry Service</a></li>
                 </ul>
             </div>
             <div class="col-3">

@@ -3,12 +3,14 @@
 </script>
 
 <main>
-    <div class="grid">
-        <div class="col-12 center">
-            <h1>{$page.status}</h1>
-            <p>Opps! Page not built yet. Comeback later. <a href="/">Back to home page</a></p>
+    <section>
+        <div class="grid">
+            <div class="col-12 col-6-m col-3-s center">
+                <h1>{$page.status}</h1>
+                <p>Opps! Page does not exist or page not built yet. Comeback later. <a href="/">Back to home page</a></p>
+            </div>
         </div>
-    </div>
+    </section>
 </main>
 
 
