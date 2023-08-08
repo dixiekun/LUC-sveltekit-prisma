@@ -6,6 +6,10 @@
 @use 'buttons';
 @use 'misc';
 
+*:focus {
+    outline-color: var(--color-system-blue); /* Replace #007bff with your desired color */
+  }
+
 body {
     font-family: var(--system-ui);
     font-size: var(--text-base);
@@ -31,7 +35,7 @@ h2 {
     font-size: var(--text-xl);
 }
 
-h3 {
+h3 { 
     font-size: var(--text-m);
 }
 

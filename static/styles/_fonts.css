@@ -1,5 +1,4 @@
 :root {
-    // font sizes
     --text-xxs: clamp(0.875rem, 0.8333rem + 0.2083vw, 1rem);
     --text-xs: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem);
     --text-s: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
@@ -9,7 +8,6 @@
     --text-xl: clamp(2.415625rem, 2.3323rem + 0.4167vw, 2.665625rem);
     --text-xxl: clamp(3.053125rem, 2.8865rem + 0.8333vw, 3.553125rem);
 
-    // font family
     --system-ui: 'Inter', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --serif: "Libre Baskerville";
 
@@ -21,7 +19,7 @@
     font-family: 'Libre Baskerville';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/libre-baskerville-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/fonts/libre-baskerville-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* libre-baskerville-italic - latin */
   @font-face {
@@ -29,7 +27,7 @@
     font-family: 'Libre Baskerville';
     font-style: italic;
     font-weight: 400;
-    src: url('../fonts/libre-baskerville-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/fonts/libre-baskerville-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* libre-baskerville-700 - latin */
   @font-face {
@@ -37,5 +35,5 @@
     font-family: 'Libre Baskerville';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/libre-baskerville-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/fonts/libre-baskerville-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }

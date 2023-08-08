@@ -3,35 +3,11 @@
   import Instagram from "$components/Icons/Instagram.svelte";
   import Twitter from "$components/Icons/Twitter.svelte";
 import Logo from "$components/logo.svelte";
-import {page} from "$app/stores"
-  import { afterNavigate } from "$app/navigation";
-  import { onMount } from "svelte";
 
-    let isAdminPage = false;
 
-    let currentYear:number;
-
-    onMount(() => {
-        // Get the current year
-        const now = new Date();
-        currentYear = now.getFullYear();
-    });
-
-    function checkIfAdmin() {
-        if ($page.data.pathname.startsWith('/sa-admin')) {
-            isAdminPage = true;
-        } else {
-            isAdminPage = false;
-        }
-    }
     
-    afterNavigate(() => {
-        checkIfAdmin()
-    })
 </script>
 
-
-{#if !isAdminPage}
     <footer>
         <div class="grid">
             <div class="col-3 footer-logo">
@@ -86,15 +62,7 @@ import {page} from "$app/stores"
             </div>
         </div>
     </footer>
-{:else}
-    <footer class="admin-footer">
-        <div class="grid">
-            <div class="col-12 col-6-m col-3-s center">
-                <span>© 2014-{currentYear} lucidclean.com</span>
-            </div>
-        </div>
-    </footer>
-{/if}
+
 
 
 
@@ -150,17 +118,6 @@ import {page} from "$app/stores"
         row-gap: var(--space-base);
     }
 
-    .center {
-        display: grid;
-        place-items: center;
 
-        span {
-            font-size: var(--text-xxs);
-        }
-    }
-
-    .admin-footer {
-        padding-block: var(--space-base);
-    }
 
 </style>

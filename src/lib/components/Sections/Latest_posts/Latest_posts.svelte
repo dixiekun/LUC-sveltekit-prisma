@@ -4,6 +4,7 @@ import SectionHead from "../Section_head.svelte";
 import { page } from '$app/stores';
   import ArticleCard from "./Article_card.svelte";
 
+
 </script>
 
 
@@ -19,9 +20,11 @@ import { page } from '$app/stores';
         <ul class="col-12 col-6-m col-3-s grid">
             {#if $page.data.posts}
                 {#each $page.data.posts as post}
-                    <li class="col-4 col-3-m">
-                        <ArticleCard title={post.title} desc={post.content} date={post.createdAt} />
-                    </li>
+                    {#each post.categories as category}
+                        <li class="col-4 col-3-m">
+                            <ArticleCard category={category.name} title={post.title} desc={post.content} date={post.createdAt} />
+                        </li>
+                    {/each}
                 {/each}
             {/if}
         </ul>

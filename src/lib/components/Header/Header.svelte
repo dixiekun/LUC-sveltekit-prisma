@@ -3,14 +3,17 @@
     import Logo from '$components/logo.svelte';
     import { onMount } from 'svelte';
     import {page} from "$app/stores"
-  import { afterNavigate } from '$app/navigation';
-  import { fly } from 'svelte/transition';
+  import {navigating} from '$app/stores'
+  import {loading} from '$lib/stores/loading'
+  import AdminHeader from './Admin_header.svelte';
+
+    $: $loading = !!$navigating
 
 
     let isMobile = false;
     let isTablet = false;
     let isClicked = false;
-    let isAdminPage = false;
+
 
     function checkIfMobile() {
         isMobile = window.innerWidth <= 640; // Adjust the threshold as needed
@@ -25,21 +28,12 @@
         document.body.classList.toggle('no-scroll', isClicked);
     }
 
-    function checkIfAdmin() {
-        if ($page.url.pathname.startsWith('/sa-admin')) {
-            isAdminPage = true;
-        } else {
-            isAdminPage = false;
-        }
-    }
     
-    
-    afterNavigate(() => {
-        checkIfAdmin()
-    })
 
     onMount(() => {
         // Check the browser size on initial mount
+        loading.set(false)
+        
         checkIfMobile();
         checkIfTablet();
         
@@ -54,26 +48,14 @@
 
 
 
+
 </script>
 
-
-<header>
-
-    {#if isAdminPage}
-        <nav in:fly class="main-navigation">
-            <div class="grid">
-                <div class="logo col-2">
-                    <Logo/>
-                </div>
-            </div>
-            
-        </nav>
-         
-    {:else}
+    <header>
         <nav class="main-navigation">
             <div class="grid">
                 <div class="logo col-2 col-1-s">
-                    <Logo/>
+                    <Logo mode="light"/>
                 </div>
                 <div class="col-1 col-spacer hide-m">
                 </div>
@@ -142,9 +124,10 @@
 
             </div>
         </nav>
-    {/if}
+    </header>
     
-</header>
+    
+
 
 
 <style lang="scss">

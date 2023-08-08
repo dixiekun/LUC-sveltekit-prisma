@@ -1,0 +1,12 @@
+@import '_spacing.css';
+@import '_colors.css';
+@import '_reset.css';
+@import '_fonts.css';
+
+body {
+    font-family: var(--system-ui);
+    font-size: var(--text-base);
+    line-height: 1.5;
+    color: var(--color-base);
+
+}

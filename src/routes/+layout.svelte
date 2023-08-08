@@ -1,42 +1,21 @@
 <script lang="ts">
-  import Footer from '$components/Footer/Footer.svelte';
-  import Header from '$components/Header/Header.svelte';
-  import SlideIn from '$components/PageTransitions/SlideIn.svelte';
-  import '$lib/styles/global.scss';
-  import type { LayoutServerData } from './$types';
+    import Loader from '$components/PageTransitions/loader.svelte';
+    import '$lib/styles/global.scss'
+    import {loading} from '$lib/stores/loading'
+    import { navigating } from '$app/stores';
+    import { onMount } from 'svelte';
 
+    let isPageLoaded = false
 
-  export let data:LayoutServerData;
+    $: $loading = !!$navigating
 
-
+    onMount(() => {
+    isPageLoaded = true
+    })
 
 </script>
 
-
-<a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-
-<Header/>
-<SlideIn pathname={data.pathname}>
-  <main id="main">
-    <slot/>
-  </main>
-</SlideIn>
-<Footer/>
-
-<style>
-  .skip-to-main-content-link {
-      position: absolute;
-      font-size: var(--text-s);
-      left: -9999px;
-      z-index: 999;
-      padding: 1em;
-      background-color: var(--color-system-blue);
-      color: white;
-      opacity: 0;
-  }
-  .skip-to-main-content-link:focus {
-      left: 10%;
-      transform: translateX(-50%);
-      opacity: 1;
-  }
-</style>
+<slot/>
+{#if $loading || !isPageLoaded}
+  <Loader/>
+{/if}
