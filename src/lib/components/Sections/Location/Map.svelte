@@ -19,6 +19,17 @@
       mapInitialized = true;
 
     }
+
+    const mapBoxPopup = document.querySelector('.mapboxgl-popup');
+
+    if (mapBoxPopup) {
+      
+      const mapBoxPopupCloseButton = document.querySelector('.mapboxgl-popup-close-button');
+      mapBoxPopupCloseButton?.setAttribute('aria-hidden', 'false');
+      console.log(mapBoxPopupCloseButton)
+    }
+  
+
   });
 
   function initializeMap() {
@@ -47,6 +58,8 @@
     el.appendChild(img);
     return el;
   }
+
+
 </script>
 
 
