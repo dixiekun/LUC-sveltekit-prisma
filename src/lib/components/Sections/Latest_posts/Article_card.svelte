@@ -79,7 +79,7 @@
             }
 
             span.date {
-                color: var(--color-base-200);
+                color: var(--color-base-300);
             }
         }
 

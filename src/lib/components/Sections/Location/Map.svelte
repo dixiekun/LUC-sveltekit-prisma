@@ -43,6 +43,7 @@
     const el = document.createElement('div');
     const img = document.createElement('img');
     img.src = markerSVG;
+    img.alt = 'Location Marker';
     el.appendChild(img);
     return el;
   }
